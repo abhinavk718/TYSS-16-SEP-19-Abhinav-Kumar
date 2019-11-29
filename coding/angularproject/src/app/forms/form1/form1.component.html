@@ -1,0 +1,37 @@
+<form action="" class="col-md-4 offset-4 mt-5 mb-5 card card-body bg-danger" #form2="ngForm" (ngSubmit)="submitForm2(form2)">
+    <h1 class="text-center bg-dark text-white">Form2</h1>
+    <div class="form-group">
+        <input type="text" name="name1" id="name1" placeholder="Candidate Name" class="form-control" #cname="ngModel" ngModel required>
+        <div *ngIf="cname.touched && cname.invalid">
+             <p class="alert alert-danger" *ngIf="cname.errors.required">*This field is required</p>
+        </div>
+    </div>
+    <div class="form-group"> 
+            <input type="text" name="experience1" id="experience1" placeholder="Year of experience" class="form-control" #exp="ngModel" ngModel required>
+            <div *ngIf="exp.touched && exp.invalid">
+                <p class="alert alert-danger" *ngIf="exp.errors.required">*This field is required</p>
+           </div>
+    </div>
+    <div class="form-group">
+        <h4>Select Skills</h4>
+        <input type="radio" name="sql" value="java">Java
+        <input type="radio" name="sql" value="sql">Sql
+        <input type="radio" name="sql" value="python">Python
+        <input type="radio" name="sql" value="angular">Angular
+    </div>
+    <div class="form-group"> 
+            <input type="text" name="cctc1" id="cctc" placeholder="C C T C" class="form-control">
+    </div>
+    <div class="form-group"> 
+            <input type="text" name="ectc1" id="ectc" placeholder="E C T C" class="form-control">
+    </div>
+    <div class="form-group"> 
+            <input type="text" name="rloc1" id="rloc" placeholder="Ready to relocate" class="form-control" #rloc="ngModel" ngModel required>
+            <div *ngIf="rloc.touched && rloc.invalid">
+                <p class="alert alert-danger" *ngIf="rloc.errors.required">*This field is required</p>
+           </div>
+    </div>
+    <div class="form-group">
+        <button type="submit" class="btn btn-primary float-right" [disabled]="form2.invalid">Shedule Interview</button>
+    </div>
+</form>

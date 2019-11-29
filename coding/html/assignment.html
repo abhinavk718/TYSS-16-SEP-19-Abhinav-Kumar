@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>table_no-1</h1>
+    <table border="1px" style="border-collapse: collapse">
+        <caption>a test table with merge cells.</caption>
+        <tr>
+            <th rowspan="2"></th>
+            <th colspan="2">Avarage</th>
+            <th rowspan="2">Red eyes</th>
+        </tr>
+        <tr>
+                <th>height</th>
+                <th>weight</th>
+        </tr>
+        <tr>
+            <th>male</th>
+            <td>1.9</td>
+            <td>0.003</td>
+            <td>40%</td>
+        </tr>
+        <tr>
+            <th>female</th>
+            <td>1.7</td>
+            <td>0.002</td>
+            <td>43%</td>
+        </tr>
+    </table><br>
+    <h1>table_no-2</h1>
+    <table border="1px" style="border-collapse: collapse">
+        <tr>
+            <th rowspan="7">hours</th>
+            <th colspan="6">Time_table</th>
+        </tr>
+        <tr >
+            <th>Mon</th>
+            <th>Tue</th>
+            <th>Wed</th>
+            <th>Thu</th>
+            <th>Fri</th>
+        </tr>
+        <tr>
+            <td>science</td>
+            <td>maths</td>
+            <td>science</td>
+            <td>maths</td>
+            <td>arts</td>
+        </tr>
+        <tr>
+            <td>social</td>
+            <td>history</td>
+            <td>english</td>
+            <td>social</td>
+            <td>sports</td>
+        </tr>
+        <tr>
+            <th colspan="5">lunch</th>
+        </tr>
+        <tr>
+            <td>science</td>
+            <td>maths</td>
+            <td>science</td>
+            <td>maths<s/td>
+            <td rowspan="2">projects</td>
+        </tr>
+        <tr>
+            <td>social</td>
+            <td>history</td>
+            <td>english</td>
+            <td>social</td>
+        </tr>
+    </table>
+    <h1>table_no-3</h1>
+    <table border="1px">
+        <tr>
+            <th colspan="2">Home team</th>
+            <th colspan="2">Away Team</th>
+        </tr>
+        <tr>
+            <th>arsenal</th>
+            <td>2</td>
+            <th>Leeds</th>
+            <td>1</td>
+        </tr>
+        <tr>
+                <th>Derby</th>
+                <td>1</td>
+                <th>Everton</th>
+                <td>1</td>
+            </tr>
+            <tr>
+                    <th>Liverpool</th>
+                    <td>0</td>
+                    <th>Sunderland</th>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <th>Newcaste</th>
+                    <td>1</td>
+                    <th>Man Utd</th>
+                    <td>4</td>
+                </tr>
+    </table>
+    <h1>Form-1</h1>
+    <form action="">
+        <label for="FirstLame">First Name</label><br>
+        <input type="text" name="name" id="firstname" placeholder="Enter FirstName" required><br>
+        <label for="LastName">Last Name</label><br>
+        <input type="text" name="name" id="lastname" placeholder="Enter LastName"><br>
+        <label for="CompanyName">Company Name</label><br>
+        <input type="text" name="name" id="CompanyNAme" placeholder="Enter CompanyName"><br>
+        <label for="Emp Id">Emp Id</label><br>
+        <input type="text" name="name" id="EmpId" placeholder="Enter EmpId"><br>
+        <label for="Date Of Joining">Date Of Joining</label><br>
+        <input type="text" name="name" id="Date Of Joining" placeholder="Enter Joining Date"><br>
+        <label for="Gender">Gender</label><br>
+        <input type="radio" name="Gender" id="Gender">Male
+        <input type="radio" name="Gender" id="Gender">Female
+        <input type="radio" name="Gender" id="Gender">Others
+        <br>
+        <label for="Skills">Skills</label><br>
+        <input type="checkbox" name="value" id="value">
+        <label for="java">java</label><br>
+        <input type="checkbox" name="value" id="value">
+        <label for="sql">sql</label><br>
+        <input type="checkbox" name="value" id="value">
+        <label for="j2ee">j2ee</label><br>
+        <input type="checkbox" name="value" id="value">
+        <label for="hibernate">hibernate</label>
+        <br>
+        <input type="submit" value="submit">
+        <input type="reset" value="reset">
+    </form>
+    <h1>Form-2</h1>
+    <h3>Customer Details</h3>
+    <form action="">
+        <label for="Full Name">Full Name*</label><br>
+        <br>
+        <input type="text" name="name" id="name" placeholder="Enter FirstName" required>
+        <input type="text" name="LastName" id="LastName" placeholder="Enter LastName" required><br>
+        <label for="Address">Address*</label><br>
+        <br>
+        <input type="text" name="address" id="address" placeholder="Street Adress" required><br>
+        <br>
+        <input type="text" name="address" id="address" placeholder="Street Address Line 2" required><br>
+        <br>
+        <input type="text" name="city" id="city" placeholder="Enter city" required>
+        <input type="text" name="State" id="State" placeholder="State" required><br>
+        <br>
+        <input type="text" name="postal" id="postal" placeholder="postal code" required>
+        <select name="country" id="country" required>
+            <option value="" selected disabled>Please Select</option>
+            <option value="ind">India</option>
+            <option value="pak">Pakistan</option>
+            <option value="aus">Australlia</option>
+        </select>
+    </form>
+    <h1>Form-3</h1>
+    <form action="">
+        <label for="FullName">Full Name*</label>
+        <input type="text" name="FirstName" id="FirstName" required>
+        <input type="text" name="middlename" id="middlename">
+        <input type="text" name="LasttName" id="LasttName" required><br>
+        <br>
+        <label for="currentaddress">Current Address</label>
+        <input type="text" name="Street Address" id="Street Address"><br>
+        <br>
+        <input type="text" name="Street Address Line2" id="Street Address Line2"><br>
+        <label for="city">City</label>
+    </form>
+</body>
+</html>

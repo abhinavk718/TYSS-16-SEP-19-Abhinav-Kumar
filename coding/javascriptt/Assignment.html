@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Assignment</title>
+</head>
+<body>
+    <script>
+        console.log('OBJECT CREATION WITHOUT NEW KEYWORD.');
+        var person ={
+            name : 'Abhinav kumar',
+            age : 22,
+            gender : 'male',
+            color : 'white',
+        }
+        console.log('Name = '+person.name);
+        console.log('Age = '+person.age);
+        console.log('Gender = '+person.gender);
+        console.log('color = '+person.color);
+        console.log('===================================================');
+    </script>
+    <script>
+        var fruits ={
+            name : 'mango',
+            color :'yellow',
+            taste : 'sweet',
+            price : 50,
+        }
+        console.log('Name = '+fruits.name);
+        console.log('Color = '+fruits.color);
+        console.log('Taste = '+fruits.taste);
+        console.log('Price = '+fruits.price);
+        console.log('=====================================================');  
+    </script>
+    <script>
+        var movies={
+         movieName : 'Dhadkan',
+         heroName : 'Sunil Shethy',
+         heroineName : 'Shilpa Shethy',
+         status : 'Blockbuster',
+        }
+        console.log('Movie = '+movies.movieName)
+        console.log('Actor = '+movies.heroName)
+        console.log('Actress = '+movies.heroineName)
+        console.log('Status = '+movies.status) 
+        console.log('=============================================');
+    </script>
+    <script>
+        var product ={
+            productName :'motorola',
+            screenSize :'5.5 inch',
+            front : '24 mp',
+            rear : '60 mp',
+        }
+        console.log('Product = '+product.productName)
+        console.log('ScreenSize = '+product.screenSize)
+        console.log('Front = '+product.front)
+        console.log('Rear = '+product.rear); 
+        console.log('================================================'); 
+    </script>
+    <script>
+        var animal ={
+            name :'Cow',
+            eat : 'Grass',
+            product :'Milk',
+            clour : 'Black',
+        }
+        console.log('Name = '+animal.name)
+        console.log('Eat = '+animal.eat)
+        console.log('Product = '+animal.product)
+        console.log('Color = '+animal.clour);
+        console.log('=======================================================');
+        
+    </script>
+    <script>
+        console.log('OBJECT CREATION WITH THE HELP OF NEW KEYWORD.');
+        var person = new Object();
+        person.name = 'Abhinav Kumar',
+        person.age = 22,
+        person.company = 'tyss',
+        person.EmpId = 1918,
+        console.log('Name = '+person.name)
+        console.log('Age = '+person.age)
+        console.log('Company = '+person.company)
+        console.log('EmpId = '+person.EmpId) 
+        console.log('======================================================');
+    </script>
+    <script>
+        var fruits = new Object();
+        fruits.name ='Mango';
+        fruits.clour ='Yellow';
+        fruits.taste ='Sweet';
+        console.log('Name = '+fruits.name);
+        console.log('Clour = '+fruits.clour);
+        console.log('Taste = '+fruits.taste);
+        console.log('======================================================');
+    </script>
+    <script>
+        var product = new Object();
+        product.name ='Motorola'
+        product.id =123
+        product.price =10000
+        console.log('Name = '+product.name);
+        console.log('Id = '+product.id);
+        console.log('Price ='+product.price);
+        console.log('===============================================');
+    </script>
+    <script>
+        console.log('CREATING ARRAYS WITH THE HELP OF NEW KEYWORD.');
+        //Array creation with the help of new keyword
+        var fruits =new Array('Mango','Banana','Papaya','Orange');
+        console.log(fruits);
+        var mobile =new Array('Nokia','motorola','Samsung','Apple');
+        console.log(mobile);
+        var animal = new Array('Cow','Dog','CAt','Goat')
+        console.log(animal);
+        var vegetable =new Array('Potatoo','Tomatoo','Carrot','Ladyfingure')
+        console.log(vegetable);
+        var laptop =new Array('HP','DELL','onePlus','Lenevo')
+        console.log(laptop);
+        console.log('==================================================');  
+    </script>
+    <script>
+        console.log('CREATING ARRAYS WITHOUT NEW KEYWORD.');
+        var fruits = ['APPLE','PAPYAYA','BANANA','MANGO']
+        console.log(fruits);
+        var mobile = ['Nokia','motorola','Samsung','Apple']
+        console.log(mobile);
+        var animal = ['Cow','Dog','CAt','Goat']
+        console.log(animal);
+        var vegetable =['Potatoo','Tomatoo','Carrot','Ladyfingure']
+        console.log(vegetable);
+        var laptop =['HP','DELL','onePlus','Lenevo']
+        console.log(laptop);
+        console.log('==================================================');
+    </script>
+    <script>
+        console.log('Access array element using loop.');
+        var car = new Array('Audi','Benz','Safari','Jeep','juagar')
+        for(var i=0;i<car.length;i++)
+        {
+            console.log(car[i]);  
+        }
+        console.log('================================================');   
+    </script>
+    <script>
+        console.log('Program to calculate factorial of a number');
+        //Named function
+        function factorial(num)
+        {
+            var fact=1;
+            while(num>0)
+            {
+                fact=num*fact;
+                num--;
+            }
+            console.log('factorial = '+fact); 
+        }
+        factorial(5); 
+        //function expression(Anonymous) 
+        var factorial=function(num)
+        {
+            var fact=1;
+            while(num>0)
+            {
+                fact=num*fact;
+                num--;
+            }
+            console.log('factorial = '+fact);  
+        }
+        factorial(5);
+        //Self invoked function
+        (function(num)
+        {
+            var fact=1;
+            while(num>0)
+            {
+                fact=num*fact;
+                num--;
+            }
+            console.log('factorial = '+fact);  
+        })(5);
+        //Fat Arrow Function
+        var factorial = num =>{
+            var fact=1;
+            while(num>0)
+            {
+                fact=num*fact;
+                num--;
+            } 
+            console.log('factorial = '+fact); 
+        }
+        factorial(5)
+        console.log('==========================================');
+    </script>
+    <script>
+        console.log('Program to calculate fabonaci series.');
+        //Named function
+        function fabonaci(num)
+        {
+            var a = -1;
+            var b = 1;
+            while(num > 0)
+            {
+                var fabo =a + b ;
+                console.log(fabo);
+                a = b;
+                b = fabo;
+                num--;  
+            }
+        }
+        fabonaci(10) 
+        console.log('---------------------------------------');
+        
+        //Expression Function(Ananymous Function) 
+        var fabonaci=function(num)
+        {
+            var a=-1;
+            var b = 1;
+            while(num>0)
+            {
+                var fabo = a+b;
+                console.log(fabo);
+                a = b;
+                b = fabo;
+                num--;   
+            }
+        }
+        fabonaci(10)
+        console.log('---------------------------------------------');
+        //Self invoked Function
+        (function(num)
+        {
+            var a=-1;
+            var b = 1;
+            while(num>0)
+            {
+                var fabo = a+b;
+                console.log(fabo);
+                a = b;
+                b = fabo;
+                num--;   
+            }
+        })
+        (10)
+        console.log('----------------------------------------');
+        //Fat Arrow Function
+        var fabonaci = num=>{
+            var a=-1;
+            var b = 1;
+            while(num>0)
+            {
+                var fabo = a+b;
+                console.log(fabo);
+                a = b;
+                b = fabo;
+                num--;   
+            }
+        }
+        fabonaci(10)
+        console.log('++++++++++++++++++++++++++++++++++++++++++');
+    </script>
+    <script>
+        console.log('Addition of Array elements & return it');
+        //Named Function
+        var arr = new Array(10,20,30,40,50,60,70,80,90,100);
+        function arrSum(arr)
+        {
+            var total = 0;
+            for(var i = 0 ; i < arr.length  ;i++)
+            {
+                total = total + arr[i];
+
+            }
+            return console.log('Sum of array elements are : ' +total);
+        }
+        arrSum(arr) 
+        //Expression function(Anonymoys Function)
+        var arr = new Array(10,20,30,40,50,60,70,80,90,100);
+        var arrSum=function(arr)
+        {
+            var total = 0;
+            for(var i = 0 ; i < arr.length  ;i++)
+            {
+                total = total + arr[i];
+
+            }
+            return console.log('Sum of array elements are : ' +total);
+        }  
+        arrSum(arr)
+        //Self Invoked Function
+        var arr = new Array(10,20,30,40,50,60,70,80,90,100);
+        (function(arr)
+        {
+            var total = 0;
+            for(var i = 0 ; i < arr.length  ;i++)
+            {
+                total = total + arr[i];
+
+            }
+            return console.log('Sum of array elements are : ' +total)
+        })
+        (arr)
+        //Fat Arrow Function
+        var arr = new Array(10,20,30,40,50,60,70,80,90,100);
+        var arrSum = arr =>{
+            var total = 0;
+            for(var i = 0 ; i < arr.length  ;i++)
+            {
+                total = total + arr[i];
+
+            }
+            return console.log('Sum of array elements are : ' +total) 
+        }
+        arrSum(arr)
+        console.log('+++++++++++++++++++++++++++++++++++++++++++++');
+    </script>
+    <script>
+        console.log('Program to calculate circumference of the circle.');
+        //Named Function
+        function circum(radius)
+        {
+            var circumference = 2 * 3.14 * radius;
+            console.log('circumference of the circle is :' +circumference); 
+        }
+        circum(5)
+        //Expression Function(Anonomyus Function) 
+        var circumference =function(radius)
+        {
+            var circumference = 2 * 3.14 * radius;
+            console.log('circumference of the circle is :' +circumference);  
+        }
+        circumference(5);
+        //Self Invoked Function
+        (function(radius)
+        {
+            var circumference = 2 * 3.14 * radius;
+            console.log('circumference of the circle is :' +circumference);  
+        })(5)
+        //Fat Arrow Function
+        var circumference = radius=>{
+            var circumference = 2 * 3.14 * radius;
+            console.log('circumference of the circle is :' +circumference);
+        }
+        circumference(5)
+        console.log('****************************************');   
+    </script>
+</body>
+</html>

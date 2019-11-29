@@ -1,0 +1,16 @@
+form{
+    border: 1px solid black;
+    text-align: center;
+    height: 300px;
+    width: 350px;
+    margin-left: 600px;
+    margin-top: 20px;
+    background-color: aqua;
+}
+input
+{
+    margin-top: 20px;
+    border-radius: 50px;
+    outline: none;
+    text-align: center;
+}
