@@ -1,0 +1,31 @@
+<form action="" class="col-md-4 offset-4 mt-2 mb-2 card card-body" [formGroup]="form" (ngSubmit)="submitForm(form)">
+    <h1 class="text-center" style="background-color: gray;">Application Form</h1>
+    <div class="form-group">
+        <input type="name" id="name" name="name" placeholder="Enter candidate name...." class="form-control" formControlName="name">
+        <span *ngIf="form.controls['name'].invalid &&  form.controls['name'].touched">
+            *This field is required
+          </span>
+    </div>
+    <div class="form-group">
+          <input type="text" placeholder="Enter year of experience...." class="form-control" formControlName="exp">
+    </div>
+    <div class="form-group">
+        <p>Select skills</p>
+        <input type="radio" name="java" id="java">Java
+        <input type="radio" name="java" id="angular">angular
+        <input type="radio" name="java" id="javascript">Javascript
+        <input type="radio" name="java" id="python">Python
+    </div>
+    <div class="form-group">
+    <input type="text" placeholder="Enter current ctc...." class="form-control" formControlName="cctc">
+    </div>
+    <div class="form-group">
+        <input type="text" placeholder="Enter expected ctc...." class="form-control" formControlName="ectc">
+    </div>
+    <div class="form-group">
+       <input type="text" placeholder="Ready to relocate...." class="form-control" formControlName="reloc">
+    </div>
+    <div>
+       <button type="submit" class="btn btn-primary float-right" [disabled]="form.invalid">Shedule Interview</button>
+    </div>
+</form>

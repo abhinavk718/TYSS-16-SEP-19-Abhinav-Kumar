@@ -1,0 +1,18 @@
+<form action="" class="col-md-4 offset-4 mt-5 mb-5 card card-body" #form="ngForm" (ngSubmit)="login(form)">
+    <h1 class="text-center" style="background-color: gray;">Login Form</h1>
+    <div class="formgroup">
+        <input type="text" name="name"class="form-control mb-1" placeholder="Enter Name...." #name="ngModel" ngModel required>
+        <p class="text-danger" *ngIf="name.touched && name.invalid">*This feild is required</p>
+    </div>
+    <div class="formgroup">
+        <input type="email" name="email" class="form-control mb-1" placeholder="Enter Email...." #email="ngModel" ngModel required>
+        <p class="text-danger" *ngIf="email.touched && email.invalid">*This feild is required</p>
+    </div>
+    <div class="formgroup">
+        <input type="password" name="password" class="form-control mb-1" placeholder="Enter Password...." #password="ngModel" ngModel required>
+        <p class="text-danger" *ngIf="password.touched && password.invalid">*This feild is required</p>
+    </div>
+    <div class="formgroup">
+        <button type="submit" class="btn btn-primary float-right mb-1" [disabled]="form.invalid">Login</button>
+    </div>
+</form>

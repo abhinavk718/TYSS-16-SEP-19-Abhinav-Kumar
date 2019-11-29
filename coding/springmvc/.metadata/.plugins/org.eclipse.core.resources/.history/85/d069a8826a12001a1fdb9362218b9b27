@@ -1,0 +1,16 @@
+package com.tyss.empspringmvc.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+
+import com.tyss.empspringmvc.servive.EmployeeService;
+import com.tyss.empspringmvc.servive.EmployeeServiceImpl;
+
+@Controller
+public class EmployeeController {
+	
+	@Autowired
+   private EmployeeService service;
+	
+	
+}

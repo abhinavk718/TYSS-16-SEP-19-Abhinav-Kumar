@@ -1,0 +1,7 @@
+<div class="col-md-3 card card-body mt-2 float-left">
+    <div class="card card-body" *ngFor="let mobile of Mobiles">
+        <img src="{{mobile.imgUrl}}" alt="" (click)="displayMobile(mobile)">
+        <h1 style="text-align: center;">{{mobile.name}}</h1>
+    </div>
+</div>
+<app-mobiles [mobile]="selectedMobile"></app-mobiles>

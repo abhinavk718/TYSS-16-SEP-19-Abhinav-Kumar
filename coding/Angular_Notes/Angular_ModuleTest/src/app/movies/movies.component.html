@@ -1,0 +1,7 @@
+<div class="col-md-4 offset-4 mt-2 card card-body">
+    <input type="search" placeholder="Serarch by movie Name...." (keyup)="search($event)">
+</div>
+<div class="container col-md-4 card card-body" *ngFor="let move of movie">
+    <h1>{{move.Title}}</h1>
+    <img src="{{move.Poster}}" alt="">
+</div>

@@ -1,0 +1,27 @@
+<form action="" class="col-md-4 offset-4 mt-2 mb-2 card card-body" #form="ngForm" (ngSubmit)="onSubmit(form)">
+    <h1 class="text-center" style="background-color: gray;">Form-2</h1>
+    <div class="form-group">
+        <input type="text" name="comp" placeholder="Company Name" class="form-control" #comp="ngModel" ngModel required>
+        <p class="text text-danger" *ngIf="comp.touched && comp.invalid">*This feild is required.</p>
+    </div>
+    <div class="form-group">
+    <select name="searech" id="search" class="form-control">
+        <option value="skills" selected disabled>Choose Skills</option>
+        <option value="java">java</option>
+        <option value="sql">Sql</option>
+        <option value="angular">Angular</option>
+        <option value="javascript">Javascript</option>
+    </select>
+    </div>
+    <div class="form-group">
+        <input type="text" name="exp" placeholder="Year of exp." class="form-control" #exp="ngModel" ngModel required>
+        <p class="text-danger" *ngIf="exp.touched && exp.invalid">*This field is required</p>
+    </div>
+    <div class="form-group">
+        <input type="text" name="ctc" placeholder="Expected CTC" class="form-control" #ctc="ngModel" ngModel required>
+        <p class="text-danger" *ngIf="ctc.touched && ctc.invalid">*This feild is required</p>
+    </div>
+    <div>
+      <button type="submit" class="btn btn-primary float-right" [disabled]="form.invalid">Submit</button>
+    </div>
+</form>

@@ -1,0 +1,6 @@
+package com.tyss.empspringmvc.servive;
+
+public interface EmployeeDao 
+{
+
+}
