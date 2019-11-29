@@ -1,0 +1,5 @@
+package com.tyss.thread.pausing;
+
+public class TestThread {
+
+}

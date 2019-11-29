@@ -1,0 +1,14 @@
+package com.tyss.multithreading;
+
+public class TestRunnable
+{
+	public static void main(String[] args) 
+	{
+		System.out.println("Main started");
+		MyRunnable mr=new MyRunnable();
+		Thread th =new Thread(mr);
+		
+		
+	}
+
+}

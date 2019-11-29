@@ -1,0 +1,22 @@
+package com.ty.maps;
+
+import java.util.HashMap;
+
+public class TestA 
+{
+	public static void main(String[] args)
+	{
+		HashMap hm=new HashMap<>();
+		hm.put("kuku", 998014);
+		hm.put("mala", 678941);
+		hm.put("sheela", 789785);
+		hm.put(null,456789 );
+		System.out.println("Data"+hm);
+		hm.put("mala", 789899);
+		System.out.println("After modify"+hm);
+		hm.put("dimple", 789899);
+		System.out.println("After dimple"+hm);
+		
+	}
+
+}

@@ -1,0 +1,11 @@
+package com.tyss.thread.pausing;
+
+public class TestJoin 
+{
+	public static void main(String[] args) 
+	{
+		System.out.println("main started");
+		MyJoinThread t=new MyJoinThread();
+		t.join();	
+	}
+}

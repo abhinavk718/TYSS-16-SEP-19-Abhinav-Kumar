@@ -1,0 +1,16 @@
+package com.ty.maps;
+import java.util.TreeMap;
+
+public class TestE
+{
+	public static void main(String[] args)
+	{
+		TreeMap<String, Integer>tm=new TreeMap<>();
+		tm.put("Bangalore", 560068);
+		tm.put("Hariyana", 134203);
+		tm.put("Patna", 880000);
+		tm.put("null", 787889);
+	}
+}
+
+

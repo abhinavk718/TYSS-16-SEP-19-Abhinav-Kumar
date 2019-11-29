@@ -1,0 +1,13 @@
+package com.ty.java8features.function;
+
+import java.util.function.Supplier;
+
+public class TestE
+{
+	public static void main(String[] args)
+	{
+		Supplier<Student>s=() ->new Student(2,"vijay", 56.6);
+		
+	}
+
+}

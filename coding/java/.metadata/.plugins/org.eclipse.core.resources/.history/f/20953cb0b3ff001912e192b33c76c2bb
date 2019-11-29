@@ -1,0 +1,9 @@
+package com.ty.java8features.predicate;
+
+public class TestC
+{
+	public static void main(String[] args)
+	{
+		
+	}
+}

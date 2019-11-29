@@ -1,0 +1,5 @@
+package com.tyss.thread.deadlock;
+
+public class TestA {
+
+}
