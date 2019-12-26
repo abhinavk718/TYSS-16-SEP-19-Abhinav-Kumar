@@ -1,0 +1,16 @@
+
+<form action="" class="col-md-4 offset-4 mt-5 mb-5 card card-body" #form="ngForm" (ngSubmit)="update(form)">
+        <h1 class="text-center" style="background-color: gray;">Update Asset</h1>
+        <div class="formgroup">
+            <input type="text" name="assetName" class="form-control mb-1" placeholder="Enter AssetName...." #assetName="ngModel" ngModel required>
+            <p class="text-danger" *ngIf="assetName.touched && assetName.invalid">*This feild is required</p>
+        </div>
+        <div class="formgroup">
+            <input type="text" name="assetQuantity" class="form-control mb-1" placeholder="Enter Asset Quantity...." #assetQuantity="ngModel" ngModel required>
+            <p class="text-danger" *ngIf="assetQuantity.touched && assetQuantity.invalid">*This feild is required</p>
+        </div>
+        <div class="formgroup">
+            <button type="reset" class="btn btn-primary float-right mb-2">Reset</button>
+            <button type="submit" class="btn btn-primary float-right mb-2" [disabled]="form.invalid">Update Asset</button>
+        </div>
+    </form>

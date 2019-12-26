@@ -1,0 +1,21 @@
+<div class="container">
+    <h2>Get Asset Data</h2>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Index</th>
+                <th>AssetName</th>
+                <th>AssetQuantity</th>
+                <th>AssetDescription</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let data of datas; index as i">
+                <td>{{i+1}}</td>
+                <td>{{data.assetName}}</td>
+                <td>{{data.assetQuantity}}</td>
+                <td>{{data.assetDesc}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,24 @@
+<form action="" class="col-md-4 offset-4 mt-5 mb-5 card card-body" #form="ngForm" (ngSubmit)="addEmp(form)">
+        <h1 class="text-center" style="background-color: gray;">Add Employee</h1>
+        <div class="formgroup">
+            <input type="text" name="name"class="form-control mb-1" placeholder="Enter Name...." #name="ngModel" ngModel required>
+            <p class="text-danger" *ngIf="name.touched && name.invalid">*This feild is required</p>
+        </div>
+        <div class="formgroup">
+                <input type="text" name="password" class="form-control mb-1" placeholder="Enter Password...." #password="ngModel" ngModel required>
+                <p class="text-danger" *ngIf="password.touched && password.invalid">*This feild is required</p>
+        </div>
+        <div class="formgroup">
+                <input type="text" name="gender" class="form-control mb-1" placeholder="Enter Gender...." #gender="ngModel" ngModel required>
+                <p class="text-danger" *ngIf="gender.touched && gender.invalid">*This feild is required</p>
+        </div>
+        <div class="formgroup">
+                <input type="text" name="doj" class="form-control mb-1" placeholder="Enter Joining Date...." #doj="ngModel" ngModel required>
+                <p class="text-danger" *ngIf="doj.touched && doj.invalid">*This feild is required</p>
+        </div>
+        <div class="formgroup">
+            <button type="reset" class="btn btn-primary float-right mb-2">Reset</button>
+            <button type="submit" class="btn btn-primary float-right mb-2" [disabled]="form.invalid">Add Employee</button>
+        </div>
+    </form>
+
